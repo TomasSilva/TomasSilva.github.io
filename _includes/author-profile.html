@@ -74,6 +74,10 @@
       {% if author.zotero %}
         <li><a href="{{ author.zotero }}"><i class="ai ai-zotero ai-fw icon-pad-right"></i>Zotero</a></li>
       {% endif %}
+      {% if author.lattes %}
+        <li><a href="{{ author.lattes }}"><i class="ai ai-lattes ai-fw icon-pad-right"></i>Lattes CV</a></li>
+      {% endif %}
+
 
       <!-- Font Awesome icons / Repositories and software development -->
       {% if author.bitbucket %}
