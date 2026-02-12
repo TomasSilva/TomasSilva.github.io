@@ -11,3 +11,15 @@ I am a Ph.D. candidate in Mathematics at the [Institute of Mathematics, Statisti
 My research focuses on applying **Machine Learning and Artificial Intelligence** techniques to address challenges in **Complex Differential and Algebraic Geometry**.
 
 I hold a Bachelor’s degree in Computer Engineering from Unicamp (2021). During my undergraduate studies, I worked as a junior researcher at the [Security and Cryptography Laboratory (LASCA)](https://www.lasca.ic.unicamp.br/) of the [Institute of Computing (IC)](https://ic.unicamp.br/en/), where I focused on the cryptanalysis of post-quantum and modern cryptographic systems.
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
