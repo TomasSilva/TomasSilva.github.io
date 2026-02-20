@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Etc."
+title: ""
 permalink: /etc/
 author_profile: true
 ---
@@ -16,7 +16,6 @@ Boxing, on the other hand, gives me something entirely different. It demands pre
   <img src="/files/boxing.png" width="200">
 </p>
 
----
 
 ## Friends with Websites
 
@@ -49,4 +48,3 @@ I’m lucky to have brilliant friends building beautiful things — in mathemati
 - **Henrique K. Miyamoto** — Information theory.  
   🔗 [https://miyamotohk.github.io/](https://miyamotohk.github.io/)
 
----
