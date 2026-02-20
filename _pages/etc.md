@@ -6,7 +6,7 @@ author_profile: true
 ---
 ## Outside Mathematics
 
-Outside mathematics, I try to keep space for things that make me feel human. I write poetry — not with the ambition of publishing, but as a way of slowing down and paying attention. It helps me notice rhythm, silence, and nuance in ways that mathematics sometimes hides behind formalism. I also read constantly: literature, philosophy, essays, whatever expands perspective or challenges the way I see the world.
+Outside mathematics, I try to keep space for parts of life that unfold differently from research. I write poetry — not with the ambition of publishing, but as a way of slowing down and paying attention. It helps me notice rhythm, silence, and nuance in ways that mathematics sometimes hides behind formalism. I also read constantly: literature, philosophy, essays, whatever expands perspective or challenges the way I see the world.
 <p align="center">
   <img src="/files/cafe.jpeg" width="200">
 </p>
