@@ -28,17 +28,14 @@ I’m lucky to have brilliant friends building beautiful things — in mathemati
 - **Daniel Fadel** — Differential geometry and geometric analysis.  
   🔗 [https://sites.google.com/view/daniel-fadel-math-homepage/home](https://sites.google.com/view/daniel-fadel-math-homepage/home)
 
-- **Henrique K. Miyamoto** — Information theory.  
-  🔗 [https://miyamotohk.github.io/](https://miyamotohk.github.io/)
-
 - **Andrés J. Moreno** — Geometric flows of G2-structures and calibrated submanifolds.  
-🔗 [https://sites.google.com/utp.edu.co/andresmorenoswebpage/inicio](https://sites.google.com/utp.edu.co/andresmorenoswebpage/inicio)
+  🔗 [https://sites.google.com/utp.edu.co/andresmorenoswebpage/inicio](https://sites.google.com/utp.edu.co/andresmorenoswebpage/inicio)
 
 - **Arpan Saha** — Differential geometry of moduli spaces.  
-🔗 [https://sites.google.com/view/arpansaha/home](https://sites.google.com/view/arpansaha/home)
+  🔗 [https://sites.google.com/view/arpansaha/home](https://sites.google.com/view/arpansaha/home)
 
 - **Udhav Fowdar** — Special holonomy manifolds.  
-🔗 [https://sites.google.com/view/udhavfowdar](https://sites.google.com/view/udhavfowdar)
+  🔗 [https://sites.google.com/view/udhavfowdar](https://sites.google.com/view/udhavfowdar)
 
 - **Edward Hirst** — Application of machine learning methods to problems in mathematical and theoretical physics.  
   🔗 [https://edhirst.github.io/personal-website/](https://edhirst.github.io/personal-website/)
@@ -46,6 +43,10 @@ I’m lucky to have brilliant friends building beautiful things — in mathemati
 - **Elli Heyes** — Machine learning and data science techniques to study structures in mathematics and theoretical physics..  
   🔗 [https://github.com/elliheyes](https://github.com/elliheyes)
 
+- **Jakob Stein** — Geometric analysis, gauge theory, and Riemannian manifolds with special geometric structures.  
+  🔗 [https://jakobstein.github.io/](https://jakobstein.github.io/)
 
+- **Henrique K. Miyamoto** — Information theory.  
+  🔗 [https://miyamotohk.github.io/](https://miyamotohk.github.io/)
 
 ---
