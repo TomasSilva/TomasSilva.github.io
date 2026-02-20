@@ -3,7 +3,7 @@ title: "Metaheuristic generation of brane tilings"
 collection: publications
 category: manuscripts
 permalink: /publication/2025-03-Metaheuristic generation of brane tilings
-excerpt: #
+excerpt: 'joint with Yang-Hui He and Vishnu Jejjala'
 date: 2025-03-01
 venue: 'Physics Letters B, Vol. 862'
 slidesurl: #

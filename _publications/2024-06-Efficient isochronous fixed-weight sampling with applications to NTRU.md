@@ -3,7 +3,7 @@ title: "Efficient isochronous fixed-weight sampling with applications to NTRU"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-06-Efficient isochronous fixed-weight sampling with applications to NTRU
-excerpt: #
+excerpt: 'joint with Décio Luiz Gazzoni Filho and Julio López'
 date: 2024-06-03
 venue: 'IACR Communications in Cryptology, Vol. 1, No. 2'
 paperurl: 'https://cic.iacr.org/p/1/2/14'

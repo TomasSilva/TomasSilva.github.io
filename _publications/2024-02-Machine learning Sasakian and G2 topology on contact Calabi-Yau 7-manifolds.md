@@ -3,7 +3,7 @@ title: "Machine learning Sasakian and $G_2$ topology on contact Calabi-Yau 7-man
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-Machine learning Sasakian and G2 topology on contact Calabi-Yau 7-manifolds
-excerpt: #
+excerpt: 'joint with Daattavya Aggarwal, Yang-Hui He, Elli Heyes, Edward Hirst, and Henrique N. Sá Earp'
 date: 2024-02-07
 venue: 'Physics Letters B, Vol. 850'
 slidesurl: #

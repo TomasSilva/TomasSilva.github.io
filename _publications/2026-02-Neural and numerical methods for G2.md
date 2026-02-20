@@ -3,7 +3,7 @@ title: "Neural and numerical methods for $G_2$-structures on contact Calabi-Yau 
 collection: publications
 category: preprints
 permalink: /publication/2026-02-Neural and numerical methods for G2
-excerpt: # 
+excerpt: 'joint with Elli Heyes, Edward Hirst, and Henrique N. Sá Earp' 
 date: 2026-02-12
 venue: #
 slidesurl: # 
