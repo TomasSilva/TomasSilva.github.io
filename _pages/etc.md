@@ -39,8 +39,11 @@ I’m lucky to have brilliant friends building beautiful things — in mathemati
 - **Edward Hirst** — Application of machine learning methods to problems in mathematical and theoretical physics.  
   🔗 [https://edhirst.github.io/personal-website/](https://edhirst.github.io/personal-website/)
 
-- **Elli Heyes** — Machine learning and data science techniques to study structures in mathematics and theoretical physics..  
+- **Elli Heyes** — Machine learning and data science techniques to study structures in mathematics and theoretical physics.  
   🔗 [https://github.com/elliheyes](https://github.com/elliheyes)
+
+- **Tancredi Schettini Gherardini** — Intersection of pure mathematics, artificial intelligence and theoretical physics  
+  🔗 [https://tancredi-schettini-gherardini.github.io/tan/](https://tancredi-schettini-gherardini.github.io/tan/)
 
 - **Jakob Stein** — Geometric analysis, gauge theory, and Riemannian manifolds with special geometric structures.  
   🔗 [https://jakobstein.github.io/](https://jakobstein.github.io/)
