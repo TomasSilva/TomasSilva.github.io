@@ -43,7 +43,7 @@ I’m lucky to have brilliant friends building beautiful things — in mathemati
   🔗 [https://github.com/elliheyes](https://github.com/elliheyes)
 
 - **Tancredi Schettini Gherardini** — Intersection of pure mathematics, artificial intelligence and theoretical physics  
-  🔗 [https://tancredi-schettini-gherardini.github.io/tan/](https://tancredi-schettini-gherardini.github.io/tan/)
+  🔗 [https://tancredi-schettini-gherardini.github.io/](https://tancredi-schettini-gherardini.github.io/)
 
 - **Jakob Stein** — Geometric analysis, gauge theory, and Riemannian manifolds with special geometric structures.  
   🔗 [https://jakobstein.github.io/](https://jakobstein.github.io/)
