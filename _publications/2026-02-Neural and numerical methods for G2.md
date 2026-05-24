@@ -1,13 +1,13 @@
 ---
 title: "Neural and numerical methods for $G_2$-structures on contact Calabi-Yau 7-manifolds"
 collection: publications
-category: preprints
+category: manuscripts
 permalink: /publication/2026-02-Neural and numerical methods for G2
 excerpt: 'joint with Elli Heyes, Edward Hirst, and Henrique N. Sá Earp' 
-date: 2026-02-12
-venue: #
+date: 2026-06-01
+venue: 'Physics Letters B, Vol. 878'
 slidesurl: # 
-paperurl: 'https://arxiv.org/abs/2602.12438'
+paperurl: 'https://doi.org/10.1016/j.physletb.2026.140566'
 citation: # 
 ---
 [arXiv:2602.12438](https://arxiv.org/abs/2602.12438)
