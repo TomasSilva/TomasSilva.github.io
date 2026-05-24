@@ -1,9 +1,9 @@
 ---
-title: "The exterior derivative and the mean value equality in  Rn"
+title: "The exterior derivative and the mean value equality in ℝ<sup>n</sup>"
 collection: publications
 category: preprints
 permalink: /publication/2025-10-The exterior derivative and the mean value equality in Rn
-excerpt: 'joint with Daniel Fadel and Henrique N. Sá Earp,' 
+excerpt: 'joint with Daniel Fadel and Henrique N. Sá Earp' 
 date: 2025-10-01
 venue: #
 slidesurl: # 
