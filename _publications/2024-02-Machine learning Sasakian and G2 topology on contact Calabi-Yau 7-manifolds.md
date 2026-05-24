@@ -1,5 +1,5 @@
 ---
-title: "Machine learning Sasakian and $G_2$ topology on contact Calabi-Yau 7-manifolds"
+title: "Machine learning Sasakian and \\(G_2\\) topology on contact Calabi-Yau 7-manifolds"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-Machine learning Sasakian and G2 topology on contact Calabi-Yau 7-manifolds

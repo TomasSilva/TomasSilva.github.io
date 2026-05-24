@@ -1,5 +1,5 @@
 ---
-title: "Neural and numerical methods for $G_2$-structures on contact Calabi-Yau 7-manifolds"
+title: "Neural and numerical methods for \\(G_2\\)-structures on contact Calabi-Yau 7-manifolds"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-02-Neural and numerical methods for G2
