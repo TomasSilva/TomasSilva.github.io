@@ -10,6 +10,6 @@ slidesurl: #
 paperurl: 'https://doi.org/10.1016/j.physletb.2026.140566'
 citation: # 
 ---
-[arXiv:2602.12438](https://arxiv.org/abs/2602.12438)
+[Physics Letters B, Vol. 878](https://doi.org/10.1016/j.physletb.2026.140566) -- [arXiv:2602.12438](https://arxiv.org/abs/2602.12438)
 
 A numerical framework for approximating \\(G_2\\)-structure 3-forms on contact Calabi--Yau manifolds is presented. The approach proceeds in three stages: first, existing neural network models are employed to compute an approximate Ricci-flat metric on a {Calabi–Yau} threefold. Second, using this metric and the explicit construction of a \\(G_2\\)-structure on the associated 7-dimensional Calabi–Yau link in the 9-sphere, numerical approximations of the 3-form are generated on a large set of sampled points. Finally, a dedicated neural architecture is trained to learn the 3-form and its induced Riemannian metric directly from data, validating the learned structure and its torsion via a numerical implementation of the exterior derivative, which may be of independent interest. 
