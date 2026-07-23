@@ -11,10 +11,10 @@ Outside mathematics, I try to keep space for parts of life that unfold different
   <img src="/files/cafe.jpeg" width="200">
 </p>
 
-Boxing, on the other hand, gives me something entirely different. It demands presence, discipline, and resilience. There is no abstraction in a ring — only timing, breath, and focus.
+<!-- Boxing, on the other hand, gives me something entirely different. It demands presence, discipline, and resilience. There is no abstraction in a ring — only timing, breath, and focus.
 <p align="center">
   <img src="/files/boxing.png" width="200">
-</p>
+</p> -->
 
 
 ## Friends with Websites
