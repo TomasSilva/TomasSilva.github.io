@@ -45,6 +45,9 @@ I’m lucky to have brilliant friends building beautiful things — in mathemati
 - **Tancredi Schettini Gherardini** — Intersection of pure mathematics, artificial intelligence and theoretical physics  
   🔗 [https://tancredi-schettini-gherardini.github.io/](https://tancredi-schettini-gherardini.github.io/)
 
+- **Benjamin Suzzoni** — Superconformal field theory, Holography, and Machine Learning
+  🔗 [https://www.benterre.com/](https://www.benterre.com/)
+
 - **Jakob Stein** — Geometric analysis, gauge theory, and Riemannian manifolds with special geometric structures.  
   🔗 [https://jakobstein.github.io/](https://jakobstein.github.io/)
 
