@@ -1,9 +1,15 @@
 ---
 layout: single
-title: "Etc"
+title: ""
 permalink: /etc/
 author_profile: true
 ---
+
+## Places Mathematics Has Taken Me
+
+Mathematics is supposed to be something you do at a desk, and mostly it is. But it also keeps putting me on planes. Every marker below is somewhere a talk, a visit, a programme, or a conference has taken me — click one to see what happened there.
+
+{% include places-map.html %}
 
 ## Outside Mathematics
 

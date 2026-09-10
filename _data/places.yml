@@ -1,0 +1,131 @@
+# Places mathematics has taken me.
+#
+# Rendered as a Leaflet map by _includes/places-map.html on the /etc/ page.
+#
+# Coordinates are approximate campus/institute positions entered by hand, so
+# the map needs no geocoding and no build step: add an entry here and it shows
+# up. (This is why it does not use talkmap.py — that pipeline only reads
+# _talks/*.md, and its generated map loads tiles over plain http, which a
+# browser blocks as mixed content on an https site.)
+#
+# kind: home | stay | talk | event
+
+- place: "University of Campinas (UNICAMP)"
+  city: "Campinas, Brazil"
+  lat: -22.8175
+  lng: -47.0691
+  kind: home
+  years: "2017–present"
+  what: "Home institution: BSc, PhD, and the GTAG and LASCA labs. Also the CBG inaugural workshop, Bandoleros, EnCoRi, and the Geometry, Algebra &amp; Combinatorics seminar."
+
+- place: "City, University of London"
+  city: "London, United Kingdom"
+  lat: 51.5280
+  lng: -0.1030
+  kind: stay
+  years: "2024"
+  what: "Six months as a visiting research student with Yang-Hui He. Also LOGML at Imperial College."
+
+- place: "Harvard CMSA"
+  city: "Cambridge, Massachusetts, USA"
+  lat: 42.3796
+  lng: -71.1223
+  kind: stay
+  years: "2024"
+  what: "Mathematics and Machine Learning Program."
+
+- place: "Korea Institute for Advanced Study (KIAS)"
+  city: "Seoul, South Korea"
+  lat: 37.5983
+  lng: 127.0475
+  kind: stay
+  years: "2025, 2026"
+  what: "Thematic Program on AI and Mathematics, and a talk on machine learning Riemannian metrics with special holonomy."
+
+- place: "Hausdorff Research Institute for Mathematics (HIM)"
+  city: "Bonn, Germany"
+  lat: 50.7275
+  lng: 7.0975
+  kind: stay
+  years: "2026"
+  what: "Actions and Intuition: Algebra via AI."
+
+- place: "Banff International Research Station (BIRS)"
+  city: "Banff, Alberta, Canada"
+  lat: 51.1784
+  lng: -115.5708
+  kind: talk
+  years: "2026"
+  what: "DANGER: Data, Numbers and Geometry — a data-driven view of exterior calculus."
+
+- place: "Institut Camille Jordan"
+  city: "Lyon, France"
+  lat: 45.7825
+  lng: 4.8686
+  kind: talk
+  years: "2026"
+  what: "Exceptional Geometry in Lyon — machine learning G₂ geometry."
+
+- place: "University of Erfurt"
+  city: "Erfurt, Germany"
+  lat: 50.9887
+  lng: 11.0088
+  kind: talk
+  years: "2026"
+  what: "14th International Conference on Clifford Algebras and Their Applications in Mathematical Physics."
+
+- place: "Institut d'Études Scientifiques de Cargèse"
+  city: "Cargèse, Corsica, France"
+  lat: 42.1367
+  lng: 8.5936
+  kind: event
+  years: "2024"
+  what: "Bridges Meeting on Special Geometries and Stability."
+
+- place: "University of Chile"
+  city: "Santiago, Chile"
+  lat: -33.4570
+  lng: -70.6630
+  kind: event
+  years: "2023"
+  what: "MATH-AmSud School on Geometry: Group Actions, Symmetries, Moduli and Beyond."
+
+- place: "IME, University of São Paulo"
+  city: "São Paulo, Brazil"
+  lat: -23.5595
+  lng: -46.7370
+  kind: talk
+  years: "2025"
+  what: "São Paulo Meeting on Geometry — machine learning Ricci-flat metrics."
+
+- place: "ICMC, University of São Paulo"
+  city: "São Carlos, Brazil"
+  lat: -22.0072
+  lng: -47.8964
+  kind: talk
+  years: "2025, 2026"
+  what: "Geometry Seminar, and the Mathematics Department Seminar on freeness of line arrangements."
+
+- place: "Federal University of Pernambuco (UFPE)"
+  city: "Recife, Brazil"
+  lat: -8.0500
+  lng: -34.9500
+  kind: talk
+  years: "2024"
+  what: "Seminar on Commutative Algebra and Algebraic Geometry, and the XLIII CNMAC."
+
+- place: "IMPA and UERJ"
+  city: "Rio de Janeiro, Brazil"
+  lat: -22.9576
+  lng: -43.2237
+  kind: event
+  years: "2023, 2024"
+  what: "XV ALGA at IMPA, and the Hybrid Conference on AI-Mathematics at UERJ."
+
+- place: "Federal University of Piauí (UFPI)"
+  city: "Teresina, Brazil"
+  lat: -5.0553
+  lng: -42.7960
+  kind: event
+  years: "2026"
+  what: "XXII Escola de Geometria Diferencial — co-organised the AI meets Geometry workshop."

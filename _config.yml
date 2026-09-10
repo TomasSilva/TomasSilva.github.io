@@ -99,6 +99,11 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
+# CARTO raster basemap key for the map on /etc/ (see _includes/places-map.html).
+# Client-side by necessity: the browser sends it with every tile request, so it
+# is public in the page source. Restrict it to this domain in the CARTO
+# dashboard. Free up to 5,000,000 tile requests per calendar month.
+carto_api_key            : "cb1_3frw_1_14de19a02bdc06c11f16b2b6"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:

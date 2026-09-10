@@ -1,0 +1,131 @@
+{%- assign places = site.data.places -%}
+{%- if places and places.size > 0 -%}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+
+<style>
+  .places-map {
+    height: 420px;
+    width: 100%;
+    margin: 1.5em 0 0.75em;
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+    /* Leaflet's own panes run up to z-index 700 and the masthead is only 20,
+       so give the map a stacking context of its own or popups paint over
+       the site navigation. */
+    position: relative;
+    z-index: 0;
+  }
+  .places-map .leaflet-popup-content {
+    font-size: 0.75em;
+    line-height: 1.5;
+    margin: 0.9em 1.1em;
+  }
+  .places-map .leaflet-popup-content strong {
+    display: block;
+    font-size: 1.1em;
+  }
+  .places-map .leaflet-popup-content em {
+    color: #666;
+    font-style: normal;
+  }
+  .places-legend {
+    font-size: 0.7em;
+    color: var(--global-text-color-light);
+    margin-bottom: 2.5em;
+  }
+  .places-legend span {
+    display: inline-block;
+    margin-right: 1.4em;
+    white-space: nowrap;
+  }
+  .places-legend i {
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    margin-right: 0.45em;
+  }
+</style>
+
+<div id="places-map" class="places-map"></div>
+
+<p class="places-legend">
+  <span><i style="background:#e07a5f"></i>Based here</span>
+  <span><i style="background:#2a9d8f"></i>Gave a talk</span>
+  <span><i style="background:#6d6bd0"></i>Visit or programme</span>
+  <span><i style="background:#4a90c2"></i>Conference or school</span>
+</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+/* Comments here are deliberately block-style: the compress layout collapses
+   whitespace in the rendered page, which would swallow // line comments. */
+(function () {
+  var places = {{ places | jsonify }};
+
+  var colours = {
+    home:  "#e07a5f",
+    talk:  "#2a9d8f",
+    stay:  "#6d6bd0",
+    event: "#4a90c2"
+  };
+
+  /* CARTO's raster basemaps watermark tiles unless a key is supplied. The key
+     lives in _config.yml; if it is ever cleared the map still works, just
+     watermarked, rather than requesting ".png?key=" and failing. */
+  var cartoKey = {{ site.carto_api_key | default: "" | jsonify }};
+  var keyParam = cartoKey ? "?key=" + encodeURIComponent(cartoKey) : "";
+
+  var tiles = {
+    light: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" + keyParam,
+    dark:  "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" + keyParam
+  };
+
+  function isDark() {
+    return document.documentElement.getAttribute("data-theme") === "dark";
+  }
+
+  var map = L.map("places-map", {
+    /* Don't hijack the page scroll; zoom via the +/- control or a pinch. */
+    scrollWheelZoom: false,
+    worldCopyJump: true
+  });
+
+  var layer = L.tileLayer(isDark() ? tiles.dark : tiles.light, {
+    maxZoom: 12,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  }).addTo(map);
+
+  var bounds = [];
+
+  places.forEach(function (p) {
+    var popup = "<strong>" + p.place + "</strong>" + p.city;
+    if (p.years) { popup += " <em>&middot; " + p.years + "</em>"; }
+    if (p.what)  { popup += "<br>" + p.what; }
+
+    L.circleMarker([p.lat, p.lng], {
+      radius: p.kind === "home" ? 9 : 7,
+      color: "#ffffff",
+      weight: 1.5,
+      fillColor: colours[p.kind] || colours.event,
+      fillOpacity: 0.9
+    }).addTo(map).bindPopup(popup);
+
+    bounds.push([p.lat, p.lng]);
+  });
+
+  map.fitBounds(bounds, { padding: [30, 30] });
+
+  /* Follow the site's own light/dark toggle, which sets data-theme on <html>. */
+  if (window.MutationObserver) {
+    new MutationObserver(function () {
+      layer.setUrl(isDark() ? tiles.dark : tiles.light);
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"]
+    });
+  }
+}());
+</script>
+{%- endif -%}

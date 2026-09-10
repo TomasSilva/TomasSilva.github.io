@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 talk_type: "Talk"
 permalink: /talks/2026-08-17-AI-tools-for-mathematicians
-venue: "IMECC, University of Campinas (UNICAMP)"
+venue: "Brazilian Center for Geometry (CBG)"
 date: 2026-08-17
 location: "Campinas, SP, Brazil"
 ---
