@@ -18,10 +18,14 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
+    // `sticky` rather than `fixed`: the sidebar stays inside #main, so it can
+    // never be painted over by .page__footer (which is absolutely positioned
+    // at the bottom of the document). A `fixed` sidebar is pinned to the
+    // viewport and, at 100vh tall, collides with that footer on short pages.
+    position: sticky;
+    top: calc(#{$masthead-height} + 1em);
+    max-height: calc(100vh - #{$masthead-height} - 2em);
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
   }
 
   @include breakpoint($large) {
@@ -158,8 +162,15 @@
     border-radius: 50%;
 
     @include breakpoint($large) {
+      max-width: 180px;
       padding: 5px;
       border: 1px solid var(--global-border-color);
+    }
+
+    // The avatar is the largest single block in the sidebar, so it is what
+    // gives way on short windows to keep the whole link list above the fold.
+    @media screen and (min-width: $sidebar-screen-min-width) and (max-height: 860px) {
+      max-width: 140px;
     }
   }
 }
@@ -183,8 +194,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 }
 .sidebar .author__name {
@@ -194,8 +205,12 @@
 
 .sidebar .author__desktop {
   display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
+  // Flex (not block) so that the location/employer text wraps in a hanging
+  // indent beside its icon. This rule outranks the `display` set on
+  // `.author__urls li`, so it has to opt in here too.
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -212,8 +227,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 12px;
   }
 }
 
@@ -305,14 +320,34 @@
 
   li {
     white-space: nowrap;
+
+    // The sidebar column is at most $sidebar-link-max-width, so entries like
+    // the location line are wider than it. `nowrap` is right for the mobile
+    // popup, but here it just gets clipped (the sidebar's overflow-y forces
+    // overflow-x to compute to `auto` as well), so let them wrap. Flex keeps
+    // the wrapped line aligned under the text rather than under the icon.
+    @include breakpoint($large) {
+      display: flex;
+      align-items: baseline;
+      white-space: normal;
+
+      > a {
+        display: flex;
+        align-items: baseline;
+      }
+
+      .icon-pad-right {
+        flex-shrink: 0;
+      }
+    }
   }
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
