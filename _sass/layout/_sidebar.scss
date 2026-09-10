@@ -17,15 +17,22 @@
     margin-top: 1em;
   }
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    // `sticky` rather than `fixed`: the sidebar stays inside #main, so it can
-    // never be painted over by .page__footer (which is absolutely positioned
-    // at the bottom of the document). A `fixed` sidebar is pinned to the
-    // viewport and, at 100vh tall, collides with that footer on short pages.
+  // The sidebar stays in normal flow inside #main (it is NOT `fixed`), so
+  // #main's height always encloses it and .page__footer — which is absolutely
+  // positioned at the bottom of the document — is pushed below it rather than
+  // painted over it.
+  //
+  // Deliberately no max-height/overflow-y here. Capping the height is what
+  // silently truncated the last few links: the content simply scrolled inside
+  // the sidebar, and macOS overlay scrollbars are invisible until you scroll,
+  // so it read as the footer cutting the list off.
+
+  // Pin the sidebar only when the window is tall enough to show all of it.
+  // Below that it stays an ordinary float and scrolls away with the page, so
+  // the last links stay reachable instead of being stranded below the fold.
+  @media screen and (min-width: $sidebar-screen-min-width) and (min-height: 800px) {
     position: sticky;
     top: calc(#{$masthead-height} + 1em);
-    max-height: calc(100vh - #{$masthead-height} - 2em);
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
   }
 
   @include breakpoint($large) {
