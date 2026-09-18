@@ -1,16 +1,16 @@
 ---
 title: "The exterior derivative and the mean value equality in ℝ<sup>n</sup>"
 collection: publications
-category: preprints
+category: manuscripts
 permalink: /publication/2025-10-The exterior derivative and the mean value equality in Rn
 excerpt: 'joint with Daniel Fadel and Henrique N. Sá Earp' 
-date: 2025-10-01
-venue: #
+date: 2026-09-18
+venue: 'São Paulo Journal of Mathematical Sciences'
 slidesurl: # 
-paperurl: 'https://arxiv.org/abs/2510.00999'
+paperurl: 'https://link.springer.com/article/10.1007/s40863-026-00557-z'
 citation: # 
 ---
-[arXiv:2510.00999](https://arxiv.org/abs/2510.00999)
+[São Paulo Journal of Mathematical Sciences, Vol. 20, 2026](https://link.springer.com/article/10.1007/s40863-026-00557-z) -- [arXiv:2510.00999](https://arxiv.org/abs/2510.00999)
 
 This survey revisits classical results in vector calculus and analysis by exploring a
 generalised perspective on the exterior derivative, interpreting it as a measure of
