@@ -35,6 +35,36 @@
     // Matches the sidebar's resting position (#main's top margin), so it does
     // not jump when it becomes pinned.
     top: calc(#{$masthead-height} + 1em);
+
+    // Pinned is the only state in which the sidebar can outgrow the window,
+    // so it is the only state that needs a scroll of its own. Under 800px it
+    // is an ordinary float and the page scroll already reveals the rest.
+    max-height: calc(100vh - #{$masthead-height} - 2em);
+    overflow-y: auto;
+
+    // Make that scroll *visible*. macOS overlay scrollbars stay invisible
+    // until you actually scroll, which is exactly why an earlier version of
+    // this looked like the last few links had been cut off rather than
+    // simply being below the fold. Styling the bar opts out of overlay
+    // behaviour in WebKit/Blink; scrollbar-width/-color do the same in
+    // Firefox; scrollbar-gutter reserves the space so nothing shifts when
+    // the bar appears.
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--global-border-color) transparent;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--global-border-color);
+      border-radius: 3px;
+    }
   }
 
   @include breakpoint($large) {
