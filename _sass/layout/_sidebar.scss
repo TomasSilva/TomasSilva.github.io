@@ -185,11 +185,12 @@
     border-radius: $border-radius;   // square portrait, not a circle
 
     @include breakpoint($large) {
-      // Fill the sidebar column exactly, whatever width it happens to be.
-      // box-sizing is border-box site-wide (layout/_reset), so the padding
-      // and border are drawn inside that width rather than added to it —
-      // the avatar can never push the column wider than $sidebar-link-max-width.
-      max-width: 100%;
+      // Slightly inset from the sidebar column rather than filling it, so the
+      // portrait reads a little smaller. A percentage keeps it proportional:
+      // the column itself ranges from ~155px up to $sidebar-link-max-width.
+      // box-sizing is border-box site-wide (layout/_reset), so the padding and
+      // border are drawn inside this width rather than added to it.
+      max-width: 88%;
       padding: 5px;
       border: 1px solid var(--global-border-color);
     }
@@ -197,7 +198,7 @@
     // The avatar is the largest single block in the sidebar, so it is what
     // gives way on short windows to keep the whole link list above the fold.
     @media screen and (min-width: $sidebar-screen-min-width) and (max-height: 860px) {
-      max-width: 190px;
+      max-width: 170px;
     }
   }
 }
