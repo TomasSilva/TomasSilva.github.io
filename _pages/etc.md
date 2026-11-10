@@ -21,14 +21,15 @@ Outside mathematics, I try to keep space for parts of life that unfold different
 
 I’m lucky to have brilliant friends building beautiful things — in mathematics, physics, AI, and beyond. Here are some of their corners of the internet:
 
-- [**Juliana G. F. Souza**](https://sites.google.com/view/julianagfs/home) — Quaternion algebras, information theory, coding theory, and lattice constructions.
 - [**Daniel Fadel**](https://sites.google.com/view/daniel-fadel-math-homepage/home) — Differential geometry and geometric analysis.
+- [**Udhav Fowdar**](https://sites.google.com/view/udhavfowdar) — Special holonomy manifolds.
+- [**Tancredi Schettini Gherardini**](https://tancredi-schettini-gherardini.github.io/) — Intersection of pure mathematics, artificial intelligence, and theoretical physics.
+- [**Elli Heyes**](https://github.com/elliheyes) — Machine learning and data science techniques to study structures in mathematics and theoretical physics.
+- [**Edward Hirst**](https://edhirst.github.io/personal-website/) — Application of machine learning methods to problems in mathematical and theoretical physics.
+- [**Henrique K. Miyamoto**](https://miyamotohk.github.io/) — Information theory.
 - [**Andrés J. Moreno**](https://sites.google.com/utp.edu.co/andresmorenoswebpage/inicio) — Geometric flows of G<sub>2</sub>-structures and calibrated submanifolds.
 - [**Arpan Saha**](https://sites.google.com/view/arpansaha/home) — Differential geometry of moduli spaces.
-- [**Udhav Fowdar**](https://sites.google.com/view/udhavfowdar) — Special holonomy manifolds.
-- [**Edward Hirst**](https://edhirst.github.io/personal-website/) — Application of machine learning methods to problems in mathematical and theoretical physics.
-- [**Elli Heyes**](https://github.com/elliheyes) — Machine learning and data science techniques to study structures in mathematics and theoretical physics.
-- [**Tancredi Schettini Gherardini**](https://tancredi-schettini-gherardini.github.io/) — Intersection of pure mathematics, artificial intelligence, and theoretical physics.
+- [**Paul Schwahn**](https://pschwahn.github.io/) — Riemannian geometry (curvature, special holonomy, spectral geometry), G-structures (with torsion), geometric analysis, manifolds with symmetries, Lie theory, and formalization of mathematics.
+- [**Juliana G. F. Souza**](https://sites.google.com/view/julianagfs/home) — Quaternion algebras, information theory, coding theory, and lattice constructions.
 - [**Jakob Stein**](https://jakobstein.github.io/) — Geometric analysis, gauge theory, and Riemannian manifolds with special geometric structures.
-- [**Henrique K. Miyamoto**](https://miyamotohk.github.io/) — Information theory.
 - [**Benjamin Suzzoni**](https://www.benterre.com/) — Superconformal field theory, holography, and machine learning.

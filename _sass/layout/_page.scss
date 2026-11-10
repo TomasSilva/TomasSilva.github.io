@@ -5,7 +5,9 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
+  // Gap between the fixed masthead and the start of both columns. Lowered
+  // from 2em to bring the portrait and the opening paragraph nearer the top.
+  margin-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;

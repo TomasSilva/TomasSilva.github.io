@@ -193,6 +193,25 @@ body:hover .visually-hidden button {
   margin-right: 0.5em;
 }
 
+/* GeometrIA Lab logo on the home page.
+   The supplied artwork is the lab's dark-background variant: the wordmark and
+   the mark's strokes are #E6EFEA, which is indistinguishable from the light
+   theme's #eeeeee page background. So on the light theme the logo is given the
+   lab's own navy as a backdrop; on dark it sits straight on the page. */
+.geometria-logo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 1.5em auto;
+}
+
+html:not([data-theme="dark"]) .geometria-logo {
+  background-color: #0e2a47;
+  border-radius: $border-radius;
+  padding: 1em 1.25em;
+}
+
 /* social icons*/
 
 .social-icons {

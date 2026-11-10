@@ -32,11 +32,18 @@
   // the last links stay reachable instead of being stranded below the fold.
   @media screen and (min-width: $sidebar-screen-min-width) and (min-height: 800px) {
     position: sticky;
+    // Matches the sidebar's resting position (#main's top margin), so it does
+    // not jump when it becomes pinned.
     top: calc(#{$masthead-height} + 1em);
   }
 
   @include breakpoint($large) {
     @include span(2 of 12);
+    // No top margin: .page__content p has margin-top 0, so with the sidebar
+    // also at 0 the top of the portrait lines up exactly with the first line
+    // of the article text. (This also overrides the portrait-orientation 1em
+    // above, which otherwise pushes the photo below that line.)
+    margin-top: 0;
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -162,14 +169,27 @@
     display: block;
     width: auto;
     height: auto;
+    // author-profile.html emits "<div class="author__avatar"> <img ...>", and
+    // that stray space can generate a line box above the image. Zeroing the
+    // line height here removes it, so the top of the photo lands exactly on
+    // #main's content top — level with the first line of the article text.
+    line-height: 0;
+    font-size: 0;
   }
 
   img {
+    // Block, so the image sits on no text baseline and leaves no gap above
+    // or below it inside the avatar box.
+    display: block;
     max-width: 175px;
-    border-radius: 50%;
+    border-radius: $border-radius;   // square portrait, not a circle
 
     @include breakpoint($large) {
-      max-width: 180px;
+      // Fill the sidebar column exactly, whatever width it happens to be.
+      // box-sizing is border-box site-wide (layout/_reset), so the padding
+      // and border are drawn inside that width rather than added to it —
+      // the avatar can never push the column wider than $sidebar-link-max-width.
+      max-width: 100%;
       padding: 5px;
       border: 1px solid var(--global-border-color);
     }
@@ -177,7 +197,7 @@
     // The avatar is the largest single block in the sidebar, so it is what
     // gives way on short windows to keep the whole link list above the fold.
     @media screen and (min-width: $sidebar-screen-min-width) and (max-height: 860px) {
-      max-width: 140px;
+      max-width: 190px;
     }
   }
 }
@@ -351,7 +371,7 @@
 
   a {
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     padding-right: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
